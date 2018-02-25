@@ -22,7 +22,7 @@ sys.path.append(ROOT_PATH)
 
 # add your model's MetaData object here
 # for 'autogenerate' support
-from migrations.models import user
+from src.models import user
 target_metadata = user.Base.metadata
 # target_metadata = None
 
