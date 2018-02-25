@@ -1,0 +1,4 @@
+{
+  "src/tests/test_views.py::TestFlaskrViews::test_hello_world_via_client": true,
+  "src/tests/test_views.py::TestFlaskrViews::test_smoke_test": true
+}

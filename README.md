@@ -13,15 +13,24 @@ Flask를 좀더 장고처럼 비슷하게 그리고 익숙한 느낌으로 사�
 3분만에 AWS Lambda에 작성한 Flask 프로젝트를 람다로 디플로이 해봅니다. 
 
 
+python3
+
 1. Hello Flask 
+    virtualenv -p python3 Path.
+    pip install flask 
 
 2. Test
     장고처럼 Test
+    unittest
+    pip install pytest
 
 3. Sqlalchemy and Alembic -> like Django migration
     장고처럼 ORM 
+    pip install sqlalchemy
+    pip install alembic
 
 4. Deploy Zappa 
     람다로 가볍게 올려보자
+    pip install zappa
 
 ```
