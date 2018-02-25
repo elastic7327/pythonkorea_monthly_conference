@@ -11,9 +11,18 @@ config = context.config
 # This line sets up loggers basically.
 fileConfig(config.config_file_name)
 
+
+import os
+import sys
+
+# os.path.dirname(os.path.abspath(__file__))
+current_path = os.path.dirname(os.path.abspath(__file__))
+ROOT_PATH = os.path.join(current_path, '..')
+sys.path.append(ROOT_PATH)
+
 # add your model's MetaData object here
 # for 'autogenerate' support
-from src import models.user
+from migrations.models import user
 target_metadata = user.Base.metadata
 # target_metadata = None
 
@@ -21,7 +30,6 @@ target_metadata = user.Base.metadata
 # can be acquired:
 # my_important_option = config.get_main_option("my_important_option")
 # ... etc.
-
 
 def run_migrations_offline():
     """Run migrations in 'offline' mode.

@@ -29,8 +29,13 @@ python3
     pip install sqlalchemy
     pip install alembic
 
-    alembic init flaskr_migrations
+    alembic init migrations
+
     alembic revision --autogenerate -m "added user . . . ."
+
+    alembic revision --autogenerate -m "create user table"
+
+    alembic upgrade head
 
 4. Deploy Zappa 
     람다로 가볍게 올려보자
