@@ -35,5 +35,4 @@ class BaseTest(unittest.TestCase):
         # dal.db_init('sqlite:///:memory:')
 
     def tearDown(self):
-        ENGINE = create_engine('sqlite:///:memory:')
         Base.metadata.drop_all(ENGINE)
