@@ -1,13 +1,9 @@
 # 수정중 
 
-## pythonkorea_montly_conference // Flask + Sqlalchemy + Alembic +Zappa Integration + @ 
-## 2018 3월10일에 홍대 한빛 미디어에서 발표할 파이선 격월세미나 전용 리포입니다. 
-
-## Flask + SqlAlchemy + Alembic + Zappa Integration Example
-## T.D.D를 통한 플라스크 개발
+## T.D.D를 통한 Flask 개발
+## 2018 3월10일에 홍대 한빛 미디어에서 발표할 파이선 격월세미나 전용 리포입니다.  Flask + SqlAlchemy + Alembic + Zappa Integration Example
 
 ```
-
 Feed Back 으로 인해서 테스트 쪽으로 좀더 중점적으로 가려고 합니다.
 
 본인도 몇년동안 Django 또는 Beego 등의 조금 덩치가 있는 프레임워크를 사용하다보니.
@@ -20,29 +16,14 @@ Flask를 좀더 장고처럼 비슷하게 그리고 익숙한 느낌으로 사�
 마지막으로는 저희 팀에서 서비스에 지금 사용하고 있는 Zappa라는 프레임워크를 사용해서,
 3분만에 AWS Lambda에 작성한 Flask 프로젝트를 람다로 디플로이 해봅니다. 
 
-
 python3
-
 
 1. Hello Flask 
     Hello World with Test
     virtualenv -p python3 Path.
     pip install flask 
 
-
-2. Test & Command
-
-    # 너무 어수선합니다. 사실상 전체적으로 테스트를 다룰 것 이기때문에.. 스킵을 할까 고민중입니다.
-    View Test and Model Test
-    pip install pytest
-    장고처럼 Command
-
-    테스트를 좀더 테스트답게 쉽게 도와주는 빛과 소금 패키지
-    Pytest, Mixer, unit-test
-
-    커맨드는 뷰에 올려놓고 사용하기에는 부담스러운 테스트를커맨드로 지정해서 하는 방법도 좋은 방법입니다. (Sentry)
-
-3 테스트를 하는 방법(개인적으로 추천하는 방법) 
+2 테스트를 하는 방법(개인적으로 추천하는 방법) 
     - 모듈, 모델(db model), 뷰 (func/auth/status)
 
     1. 유닛테스트를 합니다. 모듈 테스트를 합니다. 
@@ -58,7 +39,6 @@ python3
         
         P.S 이것은 개인적인 성향이 많이 따르기 때문에.. 처음부터 인증(Auth) 403 error 관련
 
-
     1 - 3 번을 좀더 재미있게 표현을 한다면..
         가령 대포를 만드는 과정이랑 비슷 한 것 같습니다.
         대포를 만들기위해서 대장간에서, 어느정도 만들고, 야전환경과 비슷한 곳에서 테스트를 하고 해당 무기를 전방에 배치를한다..? 그리고 테스트로 사격을 좀 해본다좀 재미있지만. 아무도 바로 성벽위에서 대포를 설치하면서 만들지 않죠. (물론 staging, prod 환경을 나눈다 하더라도..)
@@ -69,6 +49,18 @@ python3
     4. 프로젝트 구조 전체를 리팩토링 하고 싶은경우, 지속적으로 테스트를 하면서,
        가령 서브 디렉토리에 있는 models.py 의 경로를 옮기고 싶은경우, 지속적으로 테스트를 하면서 옮겨보세요.
        누구도 한번에 머릿속으로 정확한 PATH를 알고 from ... import 를 작성 하지는 않는 것 같습니다. (가끔씩 원숭이도 나무에서 떨어질 떄가 있습니다.)
+
+3. Test & Command
+
+    # 너무 어수선합니다. 사실상 전체적으로 테스트를 다룰 것 이기때문에.. 스킵을 할까 고민중입니다.
+    View Test and Model Test
+    pip install pytest
+    장고처럼 Command
+
+    테스트를 좀더 테스트답게 쉽게 도와주는 빛과 소금 패키지
+    Pytest, Mixer, unit-test
+
+    커맨드는 뷰에 올려놓고 사용하기에는 부담스러운 테스트를커맨드로 지정해서 하는 방법도 좋은 방법입니다. (Sentry)
 
 4. Views
     개인적인 취향일뿐.. 어느것을 선택하는것은 개발자의 자유입니다.
