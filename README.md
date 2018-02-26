@@ -64,9 +64,9 @@ python3
     함수형 뷰?
     클래스형 뷰? (플러그인 소개, 플러그인 없이도 가능)
 
-// 보류 5. Sqlalchemy and Alembic -> like Django migration
-    장고처럼 ORM  - ORM 모델 관련 테스트를 하려고 삽입했었습니다.
-
+5. Models 
+    모델 테스트와 마이그레이션 그리고 ORM을 위한 SqlAlchemy
+    Sqlalchemy and Alembic -> like Django migration
     pip install sqlalchemy
     pip install alembic
     alembic init migrations
@@ -75,7 +75,6 @@ python3
     alembic upgrade head
 
 6. Flask 이기에 좀더 자유로운 것들..
-
     모든 모듈들을 테스트화 해서, 필요할때 붙혀서 쓰면 됩니다.
     위에 3에서 했던 방법대로, 한다면 큰 무리없이 해당 모듈들을
     적절하게 Flask에 이식 할 수가 있을 것 입니다.
