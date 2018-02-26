@@ -22,29 +22,35 @@ Flask를 좀더 장고처럼 비슷하게 그리고 익숙한 느낌으로 사�
 python3
 
 1. Hello Flask 
+    장고보다 조금 쉬워보이는 Hello World
     virtualenv -p python3 Path.
     pip install flask 
 
-2. Test
+2. Test & command
     장고처럼 Test
     unittest
     pip install pytest
+    장고처럼 Command
 
-3. Sqlalchemy and Alembic -> like Django migration
+3. Views
+    함수형 뷰
+
+    클래스형 뷰
+
+4. Sqlalchemy and Alembic -> like Django migration
     장고처럼 ORM 
     pip install sqlalchemy
     pip install alembic
 
     alembic init migrations
-
     alembic revision --autogenerate -m "added user . . . ."
-
     alembic revision --autogenerate -m "create user table"
-
     alembic upgrade head
 
-4. Deploy Zappa 
+5. Deploy Zappa 
     람다로 가볍게 올려보자
     pip install zappa
+    Async 비동기처리
+    PS . 장고도 람다로 올릴수가 있다.!
 
 ```
