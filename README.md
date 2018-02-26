@@ -6,11 +6,11 @@
 ```
 Feed Back 으로 인해서 테스트 쪽으로 좀더 중점적으로 가려고 합니다.
 
-본인도 몇년동안 Django 또는 Beego 등의 조금 덩치가 있는 프레임워크를 사용하다보니.
-하는 것에만 익숙해지고, 예전에 텀프로젝트 그리고 현재 있는 팀에서 FSA를 사용하면서, 
+본인도 몇년동안 Django 또는 Beego 등의 조금 덩치가 있는 많은 것들이 갖춰있는 프레임워크를 사용하다보니.
+하는 것에만 익숙해지고, 예전에 텀프로젝트 그리고 현재 있는 팀에서 Flask SqlAlchemy alembic 를 사용하면서, 
 구글에 있는 다양한 블로깅에서 설명해주지않은 핵심만 몇개 간추려서 발표를 준비했습니다. 
 
-Flask를 좀더 장고처럼 비슷하게 그리고 익숙한 느낌으로 사용하기 위해서 발표를 준비했습니다.
+Flask를 T.D.D 기반으로 좀더 장고처럼 비슷하게 그리고 익숙한 느낌으로 사용하기 위해서 발표를 준비했습니다.
 이 프로젝트 역시 테스트가 매우 중요한 역활을 합니다. 
 
 마지막으로는 저희 팀에서 서비스에 지금 사용하고 있는 Zappa라는 프레임워크를 사용해서,
@@ -65,7 +65,7 @@ python3
     클래스형 뷰? (플러그인 소개, 플러그인 없이도 가능)
 
 5. Models 
-    모델 테스트와 마이그레이션 그리고 ORM을 위한 SqlAlchemy
+    모델 테스트(test)와 마이그레이션(migration) 그리고 ORM을 위한 SqlAlchemy
     Sqlalchemy and Alembic -> like Django migration
     pip install sqlalchemy
     pip install alembic
@@ -86,11 +86,11 @@ python3
     Flask Unit Test with Oauth2 - aka oauth2
     Flask Unit Test with GraphQL - graphene 
 
-    플라스크는 Session 세션 또는 Auth 인증처리만 적절하게 처리한다면,
+    플라스크(Flask)는 Session 세션 또는 Auth 인증처리만 적절하게 처리한다면,
     정말 강력합니다.
 
 7. Deploy Zappa 
-    람다로 가볍게 올려보자
+    람다(aws Lambda)로 가볍게 올려보자
     pip install zappa
     Async 비동기처리
     PS . 장고도 람다로 올릴수가 있다.!
