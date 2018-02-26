@@ -1,6 +1,5 @@
 from src.tests.base import BaseTest
 
-
 class TestFlaskrViews(BaseTest):
 
     def test_smoke_test(self):
