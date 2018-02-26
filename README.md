@@ -50,17 +50,12 @@ python3
        가령 서브 디렉토리에 있는 models.py 의 경로를 옮기고 싶은경우, 지속적으로 테스트를 하면서 옮겨보세요.
        누구도 한번에 머릿속으로 정확한 PATH를 알고 from ... import 를 작성 하지는 않는 것 같습니다. (가끔씩 원숭이도 나무에서 떨어질 떄가 있습니다.)
 
-3. Test & Command
+3. custom command and useful plugins
 
-    # 너무 어수선합니다. 사실상 전체적으로 테스트를 다룰 것 이기때문에.. 스킵을 할까 고민중입니다.
-    View Test and Model Test
-    pip install pytest
-    장고처럼 Command
-
+    커맨드(command)는 뷰에 올려놓고 사용하기에는 부담스러운 테스트를커맨드로 지정해서 하는 방법도 좋은 방법입니다. (Sentry)
+    조금 오래걸리는 배치(Batch) 작업 등을 하기에 적절합니다.
     테스트를 좀더 테스트답게 쉽게 도와주는 빛과 소금 패키지
     Pytest, Mixer, unit-test
-
-    커맨드는 뷰에 올려놓고 사용하기에는 부담스러운 테스트를커맨드로 지정해서 하는 방법도 좋은 방법입니다. (Sentry)
 
 4. Views
     개인적인 취향일뿐.. 어느것을 선택하는것은 개발자의 자유입니다.
