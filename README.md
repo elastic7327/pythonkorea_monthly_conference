@@ -4,7 +4,7 @@
 ## 2018 3월10일에 홍대 한빛 미디어에서 발표할 파이선 격월세미나 전용 리포입니다. 
 
 ## Flask + SqlAlchemy + Alembic + Zappa Integration Example
-## T.D.D를 통한 플라스크를 장고처럼 익숙하게 만들어서, 사용하기
+## T.D.D를 통한 플라스크 개발
 
 ```
 
