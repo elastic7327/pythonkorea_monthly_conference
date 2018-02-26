@@ -1,6 +1,6 @@
 # 수정중 
 
-## T.D.D를 통한 Flask 개발
+## T.D.D를 통한 Flask API 개발
 ## 2018 3월10일에 홍대 한빛 미디어에서 발표할 파이선 격월세미나 전용 리포입니다.  Flask + SqlAlchemy + Alembic + Zappa Integration Example
 
 ```
@@ -23,7 +23,7 @@ python3
     virtualenv -p python3 Path.
     pip install flask 
 
-2 테스트를 하는 방법(개인적으로 추천하는 방법) 
+2 테스트를 하는 방법
     - 모듈, 모델(db model), 뷰 (func/auth/status)
 
     1. 유닛테스트를 합니다. 모듈 테스트를 합니다. 
