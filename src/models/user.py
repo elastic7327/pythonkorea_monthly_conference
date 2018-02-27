@@ -9,7 +9,10 @@ class User(Base):
     __tablename__ = 'user'
 
     id = Column(Integer, primary_key=True)
-    name = Column(String(50), nullable=False)
+    username = Column(String(50), nullable=False)
     email = Column(String(50), nullable=False)
     address = Column(String(50), nullable=False)
+    password = Column(String(500), nullable=False)
 
+    def __str__(self):
+        return "User(id='%s')" % self.id

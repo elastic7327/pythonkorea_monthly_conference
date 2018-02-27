@@ -15,24 +15,27 @@ from src.models import user
 
 from src.models.user import Base
 
-ENGINE = create_engine('sqlite:///:memory:')
+# ENGINE = create_engine('sqlite:///:memory:')
+
+ENGINE = create_engine("mysql://root:MyNewPass@localhost/local_test")
 
 class BaseTest(unittest.TestCase):
 
     def setUp(self):
+        Base.metadata.create_all(ENGINE)
         app.testing = True
+        app.debug = True
 
         self.app = app.test_client()
 
-        Base.metadata.create_all(ENGINE)
-
-        SESSION = sessionmaker(bind=ENGINE)
-
-        self.mixer = Mixer(session=SESSION(), commit=True)
+        self.SESSION = sessionmaker(bind=ENGINE)
+        self.mixer = Mixer(session=self.SESSION(), commit=True)
 
         # role = mixer.blend(user.User)
 
         # dal.db_init('sqlite:///:memory:')
 
     def tearDown(self):
-        Base.metadata.drop_all(ENGINE)
+        pass
+        # self.SESSION.close_all()
+        # Base.metadata.drop_all(ENGINE)
