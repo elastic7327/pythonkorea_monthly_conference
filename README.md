@@ -79,15 +79,9 @@ python3
     위에 3에서 했던 방법대로, 한다면 큰 무리없이 해당 모듈들을
     적절하게 Flask에 이식 할 수가 있을 것 입니다.
 
-    Flask Unit Test with  ...
-    Flask Unit Test with ElasticSearch  - Elasticsearch DSL
-    Flask Unit Test with Sentry   - sentry
-    Flask Unit Test with JWT -  json web token
-    Flask Unit Test with Oauth2 - aka oauth2
-    Flask Unit Test with GraphQL - graphene 
+    Flask Unit Test with ElasticSearch  DSL Flask Unit Test with Sentry   - sentry Flask Unit Test with JWT -  json web token Flask Unit Test with Oauth2 - aka oauth2 Flask Unit Test with GraphQL - graphene 
 
     플라스크(Flask)는 Session 세션 또는 Auth 인증처리만 적절하게 처리한다면,
-    정말 강력합니다.
 
 7. Deploy Zappa 
     람다(aws Lambda)로 가볍게 올려보자
@@ -96,7 +90,6 @@ python3
     PS . 장고도 람다로 올릴수가 있다.!
 
 8. 마치며.. 
-    백엔드 쪽에서 들려오는 ...
-    서버사이드 쪽에서 파이선2, 3가 느리다고 하는 고정관념에 대한 개인적인 의견과 사실
+    웹에서의 파이썬
 
 ```

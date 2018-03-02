@@ -3,7 +3,6 @@ import pytest
 
 from src.tests.base import BaseTest
 from src.models.user import User
-
 from src.database import ENGINE, session
 
 class TestFlaskrViews(BaseTest):
