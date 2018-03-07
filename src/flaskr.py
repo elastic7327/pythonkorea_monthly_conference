@@ -14,6 +14,12 @@ app.config['SECRET_KEY'] = 'super-secret'
 # app.config['JWT_AUTH_USERNAME_KEY'] = 'username'
 # app.config['JWT_AUTH_PASSWORD_KEY'] = 'password'
 
+
+@app.route('/')
+def hello_world():
+    return "Hello World!", 200
+
+
 def authenticate(username, password):
     user = session.query(
                 User
